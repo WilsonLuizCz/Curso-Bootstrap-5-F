@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style2.css">
+    <title>Bootstrap Aula-02</title>
+</head>
+
+<body>
+<div class="container">
+    <h1>Aula 02</h1>
+    
+    <h2>Tabelas:</h2>
+    <br>
+
+    <p>Para criar uma tabela basta adicionar a tag"table" como de costume e adicionar  a classe "table" para entrar na formatação padrão:</p>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nome do curso</th>
+                <th>Carga horária</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Bootstrap 5</td>
+                <td>12hrs</td>
+            </tr>
+            <tr>
+                <td>React JS</td>
+                <td>40hrs</td>
+            </tr>
+            <tr>
+                <td>Javascript</td>
+                <td>40 hrs</td>
+            </tr>
+        </table>
+        <br>
+    
+    <table class="table-striped table">
+        <thead>
+            <tr class="table-primary">
+                <th>Nome do curso</th>
+                <th>Carga horária</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Bootstrap 5</td>
+                <td>12hrs</td>
+            </tr>
+            <tr>
+                <td>React JS</td>
+                <td>40hrs</td>
+            </tr>
+            <tr>
+                <td>Javascript</td>
+                <td>40 hrs</td>
+            </tr>
+        </table>
+        <p>Na tabela acima foi combinado coma a tag table a classe "table striped",então a classe ficou "table table-striped" que dá o efeito zebrado.</p>
+        <br>
+       
+
+        <table class="table-hover table">
+            <thead>
+                <tr class="table-primary">
+                    <th>Nome do curso</th>
+                    <th>Carga horária</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Bootstrap 5</td>
+                    <td>12hrs</td>
+                </tr>
+                <tr>
+                    <td>React JS</td>
+                    <td>40hrs</td>
+                </tr>
+                <tr>
+                    <td>Javascript</td>
+                    <td>40 hrs</td>
+                </tr>
+            </table>
+            <p>Na tabela acima foi combinado com a classe "table" a classe "table-hover" ficanco a classe"table table-hover" que dá o efeito zebrado ao passar o mouse por cima da tabela.</p>
+            <br>
+            <table class="table table-dark">
+                <thead>
+                    <tr class="table-success">
+                        <th >Nome do curso</th>
+                        <th class="text-center">Carga horária</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bootstrap 5</td>
+                        <td class="text-center">12hrs</td>
+                        <td class="text-end"><button class="btn-primary ">Detalhes</button></td>
+                    </tr>
+                    <tr>
+                        <td>React JS</td>
+                        <td class="text-center">40hrs</td>
+                        <td class="text-end"><button class="btn-primary ">Detalhes</button></td>
+                    </tr>
+                    <tr>
+                        <td>Javascript</td>
+                        <td class="text-center">40 hrs</td>
+                        <td class="text-end"><button class="btn-primary ">Detalhes</button></td>
+                    </tr>
+                </table>
+                <p>Na tabela acima foi combinado com a classe "table-dark" para colocar em modo noturno,essa alteração de cor pode ser aplicada tanto na tabela inteira como em apenas em um célula ou linha,basta adicionar a classe. A cor pode ser escolhida de acordo com as classes ensinadas na aula 1,os chamados helppers.</p>
+                <p>Pode se misturar as classes para acrescentar um botão como fiz acima.</p>
+                <p>Pode se também alinhar os conteúdos das células com os hellpers de texto:"text-start" "text-center" "text-end" como fiz acima com o botão e com a carga horária.</p>
+</div>
+    </tbody>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

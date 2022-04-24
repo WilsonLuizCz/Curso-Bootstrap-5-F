@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Bootstrap Aula-03</title>
+</head>
+
+<body>
+
+<div class="container">
+<h1>Aula 3 Formulários</h1>
+
+<form action="">
+    <input type="text">
+</form>
+<p>Esse é um formulário usando a tag"form" com uma tag "input" dentro.Este formulário está no padrão Bootstrap.</p>
+<br>
+
+<form action="">
+    <input type="text" class="form-control">
+</form>
+<p>Este formulário está com a classe "form-control" no input.</p>
+<br>
+
+<form action="">
+    <input type="text" class="form-control">
+    <div class="form-text">
+     Neste campo pode ser incluídos caracteres especiais.
+    </div>
+</form>
+<p>Este formulário está com a classe "form-control" no input e também uma div com a classe "form-text".</p>
+<br>
+
+<form action="">
+    <label for="username" class="form-label">Nome do usuário:</label>
+    <input type="text" class="form-control" placeholder="Digite seu Username">
+    <div class="form-text">
+     Neste campo pode ser incluídos caracteres especiais.
+    </div>
+</form>
+<br>
+
+<p>Este formulário está com a classe "form-control" no input e também uma div com a classe "form-text".No imput tem uma classe "placeholder" e também possui uma tag label com a classe"form-label" acima.</p>
+<br>
+
+<form action="">
+    <label for="username" class="form-label">Nome do usuário:</label>
+    <div class="form-text">
+        Neste campo pode ser incluídos caracteres especiais.
+       </div>
+    <input type="text" value="São Paulo" class="form-control" disabled>
+    <p>Aqui ele está com o "disabled".</p>
+    <br>
+
+</form>
+<hr>
+<h2>Form-Control:</h2>
+<p>Tamanhos de componentes do formulário.</p>
+<p>Os tamanhos de formulários acima estão no modo defalt ou seja são predefinidos,se você quiser um pouco maior use a classe "form-control form-control-lg ou form-control-sm"</p>
+
+<form action="">
+   
+   
+    <input type="text" value="form-control-lg" class="form-control form-control-lg" disabled>
+    <br>
+
+    <form action="">
+        
+        <input type="text" value="form-control-sm" class="form-control form-control-sm" disabled>
+        <br>
+
+<input type="file">
+<p>O botão acima serve para envio de arquivos.</p>
+<br>
+
+<input type="file" class="form-control">
+<p>Acima o botão está com a classe "form-control"</p>
+<br>
+<hr>
+<h2>Cores-color picker:</h2>
+<p>Mostra uma paleta de cores com o input type"color" com a classe "form-control form-control-color".</p>
+<input type="color" class="form-control form-control-color">
+<br>
+<hr>
+<h2>Componentes de seleção-select:</h2>
+
+<p>Select padrão.</p>
+<select name="" id="">
+    <option value="">São Paulo</option>
+    <option value="">Rio de Janeiro</option>
+    <option value="">Goiás</option>
+</select>
+<br>
+
+<br>
+
+<p>Nos seletores usamos a class"form-select".</p>
+
+<select name="" id="" class="form-select">
+    <option value="">São Paulo</option>
+    <option value="">Rio de Janeiro</option>
+    <option value="">Goiás</option>
+</select>
+<br>
+
+<p>class"form-select-lg."</p>
+<select name="" id="" class="form-select form-select-lg">
+    <option value="">São Paulo</option>
+    <option value="">Rio de Janeiro</option>
+    <option value="">Goiás</option>
+</select>
+<br>
+
+<p>class"form-select-sm."</p>
+<select name="" id="" class="form-select form-select-sm">
+    <option value="">São Paulo</option>
+    <option value="">Rio de Janeiro</option>
+    <option value="">Goiás</option>
+</select>
+<br>
+
+<p>class"form-select-sm" mais o atributo "multiple".</p>
+<select name="" id="" class="form-select form-select-sm" multiple>
+    <option value="">São Paulo</option>
+    <option value="">Rio de Janeiro</option>
+    <option value="">Goiás</option>
+</select>
+<br>
+
+<hr>
+<h2>Checked box e radio button:</h2>
+<p>Checkbox Padrão:</p>
+<input type="checkbox">
+<br>
+
+<p>Checkbox class"form-check-input":</p>
+<input type="checkbox" class="form-check-input" id="" value="" name="">
+<br>
+<br>
+
+<p>Qual curso você quer fazer?</p>
+<input type="checkbox" class="form-check-input" id="HTML" value="HTML" name="HTML"checked>
+<label for="HTML">HTML</label>
+<br>
+
+<input type="checkbox" class="form-check-input" id="HTML" value="HTML" name="HTML" >
+<label for="HTML">JS</label>
+<br>
+
+<input type="checkbox" class="form-check-input" id="HTML" value="HTML" name="HTML">
+<label for="HTML">Bootstrap</label>
+<br>
+<br>
+
+<h2>Radio button:</h2>
+
+<p>Padrão:</p>
+<input type="radio">
+<p>class = form-chek-input</p>
+
+<p>Qual turno você deseja?</p>
+
+<input type="radio" class="form-check-input" value="Manhã" id="turno" name="turno">
+<label for="Manhã">Manhã</label>
+<br>
+<input type="radio" class="form-check-input" value="Tarde"id="turno" name="turno">
+<label for="Tarde">Tarde</label>
+<br>
+<input type="radio" class="form-check-input" value="Noite"id="turno" name="turno">
+<label for="Noite">Noite</label>
+<br>
+<br>
+<h2>Form Switch:</h2>
+<p>Coloca um div com a classe "form-check form-switch" e dentro coloca um input type "checkbox" com a class "form-check-input".</p>
+<div class="form-check form-switch">
+    <input type="checkbox" name="" id="" class="form-check-input">
+
+</div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
