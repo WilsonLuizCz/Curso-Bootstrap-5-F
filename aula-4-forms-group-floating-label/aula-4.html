@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Modelo Bootstrap</title>
+</head>
+
+<body>
+
+<div class="container">
+<h1>Aula 4</h1>
+<p>Falaremos sobre Forms parte 2,input groups.</p>
+<br>
+<h2>Input group:</h2>
+<br>
+<form action="">
+
+    <div class="input-group input-group-sm">
+    <div class="input-group-text">@</div>
+    <input type="text" class="form-control" placeholder="e-mail">
+    </div>
+    <p>Acima foi adicionado um input type text com class 'form-control' e placeholder 'e-mail',em cima dele coloquei uma div com class 'input-group-text' onde introduzi
+        o texto do '@',e envolvendo esses dois componentes coloquei uma div com class 'input-group',que deu o resultado de unir os dois componentes do nosso form.
+    </p>
+    <br>
+
+    <div class="input-group">
+        <input type="text" name="" id="" class="form-control" placeholder="Usuário">
+        <div class="input-group-text">@</div>
+        <input type="text" name="" id="" class="form-control" placeholder="Domínio">
+    </div>
+<p>Acima foi a seguinte combinação:
+    div class 'input-group' + (dentro da div) div class 'form-control' e placeholder 'Usuário' + div class 'input-group-text' '@' +
+    div class 'form-control' e placeholder 'Domínio'.
+</p>
+<br>
+<div class="input-group input-group-lg">
+
+    <div class="input-group-text">@</div>
+    <input type="text" name="" id="" class="form-control" placeholder="Digite aqui">
+    <button class="btn btn-primary">ENVIAR</button>
+
+</div>
+    <p>Acima eu mesclei dentro da div class 'input-group': uma (div class "input-group-text") + (input type'text' class'form-control') + (button class 'btn-primary').</p>
+    <br>
+    <p>Lembrando que se você desejar alterar o tamanho basta adicionar um "input-group-sm ou (lg)" na div que está abraçando e envolvendo 
+        todos os componentes como está acima.
+    </p>
+    <br>
+</form>
+
+<h2>Floating Labels:</h2>
+
+
+</div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
